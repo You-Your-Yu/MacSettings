@@ -3,6 +3,7 @@
 packages:
 	- { name: ansible, state: present }
 	- { name: git, state: present }
+	- { name: htop, state: present }
 	- { name: mas, state: present }
 	- { name: pyenv, state: present }
 	- { name: tmux, state: present }
