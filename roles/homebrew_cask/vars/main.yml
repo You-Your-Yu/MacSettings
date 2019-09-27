@@ -1,12 +1,13 @@
 ---
 
-packages:
-	- { name: atom, state: present }
-	- { name: clipy, state: present }
-	- { name: google-chrome, state: present }
-	- { name: google-japanese-ime, state: present }
-	- { name: iterm2, state: present }
-	- { name: karabiner-elements, state: present }
-	- { name: kindle, state: present }
-	- { name: pycharm-ce, state: present }
-	- { name: slack, state: present }
+packages: 
+  - { name: atom, state: present }
+  - { name: clipy, state: present }
+  - { name: google-chrome, state: present }
+  - { name: google-japanese-ime, state: present }
+  - { name: iterm2, state: present }
+  - { name: karabiner-elements, state: present }
+  - { name: kindle, state: present }
+  - { name: pycharm-ce, state: present }
+  - { name: slack, state: present }
+

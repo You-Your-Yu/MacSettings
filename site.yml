@@ -1,8 +1,8 @@
 ---
 
 - hosts: localhost
-  conection: local
+  connection: local
   gather_facts: yes
   roles:
-	- homebrew
-	- homebrew_cask
+    - homebrew
+    - homebrew_cask
