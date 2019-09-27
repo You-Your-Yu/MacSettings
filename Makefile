@@ -10,6 +10,8 @@ hellowmake:
 	VAR="HELLOW MAKE"
 	echo $(VAR)
 	echo "$(VAR)"
+	echo ${VAR}
+	echo "${VAR}"
 
 $(XCODE):
 	xcode-select --install
