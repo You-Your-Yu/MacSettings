@@ -1,4 +1,4 @@
-SHELL=/bin/bash
+SHELL=/bin/sh
 
 XCODE=/usr/bin/xcode-select
 BREW=/usr/local/bin/brew
