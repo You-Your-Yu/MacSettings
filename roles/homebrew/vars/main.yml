@@ -1,0 +1,9 @@
+---
+
+packages:
+	- { name: ansible, state: present }
+	- { name: git, state: present }
+	- { name: mas, state: present }
+	- { name: pyenv, state: present }
+	- { name: tmux, state: present }
+	- { name: wget, state: present }
