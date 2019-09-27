@@ -4,6 +4,13 @@ XCODE=/usr/bin/xcode-select
 BREW=/usr/local/bin/brew
 ANSIBLE=/usr/local/bin/ansible
 
+
+.PHONY: hellowmake
+hellowmake:
+	VAR="HELLOW MAKE"
+	echo=$(VAR)
+	echo="$(VAR)"
+
 $(XCODE):
 	xcode-select --install
 
