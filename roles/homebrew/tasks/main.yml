@@ -5,13 +5,13 @@
   - name: homebrew update
     homebrew:
       update_homebrew: true
-      upgrade_all: yes
+      upgrade_all: no
 
   - name: homebrew packages install
     homebrew:
       name: "{{ item.name }}"
       state: "{{ item.state | default('present') }}"
-      with_items: "{{ packages }}"
+    with_items: "{{ packages }}"
 
   tags:
     - homebrew

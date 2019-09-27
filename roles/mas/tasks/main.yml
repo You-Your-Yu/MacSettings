@@ -13,7 +13,7 @@
     - name: mas get installed list
       shell: mas list
       register: mas_installed_list
-      chenged_when: False
+      changed_when: False
       check_mode: no
 
     when: '"mas" in mas_brew_list.stdout_lines'
