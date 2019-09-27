@@ -8,12 +8,13 @@ ANSIBLE := /usr/local/bin/ansible
 .PHONY: hellowmake
 hellowmake:
 	echo $(SHELL)
+	echo $(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 
 $(XCODE):
 	xcode-select --install
 
 $(BREW): $(XCODE)
-	sudo ruby -e "$(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	ruby -e $(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 
 $(ANSIBLE): $(BREW)
 	brew install ansible
