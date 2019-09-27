@@ -1,23 +1,19 @@
-SHELL=/bin/zsh
+SHELL := /bin/zsh
 
-XCODE=/usr/bin/xcode-select
-BREW=/usr/local/bin/brew
-ANSIBLE=/usr/local/bin/ansible
+XCODE := /usr/bin/xcode-select
+BREW := /usr/local/bin/brew
+ANSIBLE := /usr/local/bin/ansible
 
 
 .PHONY: hellowmake
 hellowmake:
-	VAR="HELLOW MAKE"
-	echo $(VAR)
-	echo "$(VAR)"
-	echo ${VAR}
-	echo "${VAR}"
+	echo $(SHELL)
 
 $(XCODE):
 	xcode-select --install
 
 $(BREW): $(XCODE)
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/usr/bin/ruby -e "$(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 $(ANSIBLE): $(BREW)
 	brew install ansible
@@ -31,4 +27,4 @@ dryrun: init
 
 .PHONY: run
 run: init
-	ansible-playbook -C -i localhost site.yml
+	ansible-playbook -i localhost site.yml
