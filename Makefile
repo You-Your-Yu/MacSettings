@@ -13,7 +13,7 @@ $(XCODE):
 	xcode-select --install
 
 $(BREW): $(XCODE)
-	ruby -e "$(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	sudo ruby -e "$(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 $(ANSIBLE): $(BREW)
 	brew install ansible
