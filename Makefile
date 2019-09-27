@@ -7,14 +7,14 @@ ANSIBLE=/usr/local/bin/ansible
 $(XCODE):
 	xcode-select --install
 
-$(BREW):
+$(BREW): $(XCODE)
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-$(ANSIBLE):
+$(ANSIBLE): $(BREW)
 	brew install ansible
 
 .PHONY: init
-init: $(XCODE) $(BREW) $(ANSIBLE)
+init: $(ANSIBLE)
 
 .PHONY: dryrun
 dryrun: init
