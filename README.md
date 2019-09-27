@@ -9,6 +9,7 @@ brew install ansible
 ```
 3. run ansible
 ```
+git clone https://github.com/You-Your-Yu/MacSettings.git
 cd MacSettings
 make run
 ```
