@@ -8,6 +8,9 @@ packages:
   - { name: iterm2, state: present }
   - { name: karabiner-elements, state: present }
   - { name: kindle, state: present }
+  - { name: microsoft-word, state: present }
+  - { name: microsoft-excel, state: present }
+  - { name: microsoft-powerpoint, state: present }
   - { name: pycharm-ce, state: present }
   - { name: slack, state: present }
 
