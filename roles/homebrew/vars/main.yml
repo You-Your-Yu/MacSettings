@@ -6,5 +6,7 @@ packages:
   - { name: htop, state: present }
   - { name: mas, state: present }
   - { name: pyenv, state: present }
+  - { name: pyenv-virtualenv, state: present }
   - { name: tmux, state: present }
   - { name: wget, state: present }
+  - { name: graphviz, state: present }
