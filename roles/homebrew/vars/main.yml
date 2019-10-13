@@ -10,3 +10,5 @@ packages:
   - { name: tmux, state: present }
   - { name: wget, state: present }
   - { name: graphviz, state: present }
+  - { name: mecab, state: present }
+  - { name: mecab-ipadic, state: present }
