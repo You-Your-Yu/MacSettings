@@ -12,3 +12,5 @@ packages:
   - { name: graphviz, state: present }
   - { name: mecab, state: present }
   - { name: mecab-ipadic, state: present }
+  - { name: sshfs, state: present }
+  - { name: peco, state: present }

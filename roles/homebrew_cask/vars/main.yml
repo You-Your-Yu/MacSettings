@@ -13,4 +13,3 @@ packages:
   - { name: microsoft-powerpoint, state: present }
   - { name: pycharm-ce, state: present }
   - { name: slack, state: present }
-
