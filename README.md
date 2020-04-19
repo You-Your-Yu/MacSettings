@@ -1,5 +1,5 @@
 # MacSettings
-Automatically install convinient tools using Ansible.
+Automatically install useful tools using Ansible.
 
 ## Usage
 1. install homebrew
