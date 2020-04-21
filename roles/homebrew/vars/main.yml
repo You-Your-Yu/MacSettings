@@ -14,3 +14,4 @@ packages:
   - { name: mecab-ipadic, state: present }
   - { name: sshfs, state: present }
   - { name: peco, state: present }
+  - { name: psql, state: present }
