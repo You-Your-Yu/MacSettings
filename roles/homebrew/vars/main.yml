@@ -12,6 +12,7 @@ packages:
   - { name: graphviz, state: present }
   - { name: mecab, state: present }
   - { name: mecab-ipadic, state: present }
+  - { name: mysql, state: present }
   - { name: sshfs, state: present }
   - { name: peco, state: present }
   - { name: psql, state: present }
