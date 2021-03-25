@@ -12,41 +12,7 @@ brew install ansible
 ```
 3. run ansible
 ```
-git clone https://github.com/You-Your-Yu/MacSettings.git
-cd MacSettings
-make run
+git clone https://github.com/yuyamada/mac-settings.git
+cd mac-settings
+ansible-playbook -i localhost site.yml --ask-become-pass
 ```
-
-## Tools to be installed
-### brew
-- git
-- htop
-- mas
-- pyenv
-- pyenv-virtualenv
-- tmux
-- wget
-- graphviz
-- mecab
-- mecab-ipadic
-- sshfs
-- peco
-
-### brew cask
-- atom
-- vscode
-- clipy
-- google-chrome
-- google-japanese-ime
-- iterm2
-- karabiner-elements
-- kindle
-- microsoft-word
-- microsoft-excel
-- microsoft-powerpoint
-- pycharm-ce
-- slack
-
-### mas
-- Mail for Gmail
-- LINE

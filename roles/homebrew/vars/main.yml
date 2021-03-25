@@ -1,18 +1,13 @@
 ---
 
 packages:
-  - { name: ansible, state: present }
-  - { name: git, state: present }
   - { name: htop, state: present }
   - { name: mas, state: present }
+  - { name: minikube, state: present }
+  - { name: mysql, state: present }
+  - { name: nvim, state: present }
+  - { name: peco, state: present }
   - { name: pyenv, state: present }
   - { name: pyenv-virtualenv, state: present }
   - { name: tmux, state: present }
   - { name: wget, state: present }
-  - { name: graphviz, state: present }
-  - { name: mecab, state: present }
-  - { name: mecab-ipadic, state: present }
-  - { name: mysql, state: present }
-  - { name: sshfs, state: present }
-  - { name: peco, state: present }
-  - { name: psql, state: present }

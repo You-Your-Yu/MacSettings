@@ -2,11 +2,10 @@
 
 - block:
   - name: homebrew cask packages install 'item.name'
-    environment:
-      HOMEBREW_CASK_OPTS: --appdir=/Applications
-    homebrew_cask:
+    community.general.homebrew_cask:
       name: "{{ item.name }}"
       state: "{{ item.state }}"
+      install_options: 'appdir=/Applications'
     with_items: "{{ packages }}"
 
   tags:

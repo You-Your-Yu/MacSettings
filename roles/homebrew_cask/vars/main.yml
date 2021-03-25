@@ -1,8 +1,8 @@
 ---
 
 packages: 
-  - { name: atom, state: present }
   - { name: clipy, state: present }
+  - { name: docker, state: present }
   - { name: google-chrome, state: present }
   - { name: google-japanese-ime, state: present }
   - { name: iterm2, state: present }
@@ -11,6 +11,5 @@ packages:
   - { name: microsoft-word, state: present }
   - { name: microsoft-excel, state: present }
   - { name: microsoft-powerpoint, state: present }
-  - { name: pycharm-ce, state: present }
   - { name: slack, state: present }
   - { name: visual-studio-code, state: present }
