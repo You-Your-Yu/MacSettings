@@ -1,4 +1,4 @@
-# MacSettings
+# mac-settings
 Automatically install useful tools using Ansible.
 
 ## Usage
