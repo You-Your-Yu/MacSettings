@@ -10,7 +10,13 @@ Automatically install useful tools using Ansible.
 ```
 brew install ansible
 ```
-3. run ansible
+3. enable ssh access to github.com
+```
+ssh-keygen
+chmod 600 ~/.ssh/id_rsa
+(and register ~/.ssh/id_rsa.pub to github.com)
+```
+4. run ansible
 ```
 git clone https://github.com/yuyamada/mac-settings.git
 cd mac-settings
