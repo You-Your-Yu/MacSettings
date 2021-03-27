@@ -2,6 +2,35 @@
 
 - block:
 
+  - name: iterm2
+    block:
+      - name: (iterm2) clone repository
+        git:
+          repo: git@github.com:yuyamada/iterm2-conf.git
+          dest: ~/.config/iterm2
+          key_file: ~/.ssh/id_rsa
+          accept_hostkey: yes
+
+      - name: (iterm2) enable LoadPrefsFromCustomFolder
+        community.general.osx_defaults:
+          domain: com.googlecode.iterm2.plist
+          key: LoadPrefsFromCustomFolder
+          type: bool
+          value: true
+
+      - name: (iterm2) set PrefsCustomFolder
+        community.general.osx_defaults:
+          domain: com.googlecode.iterm2.plist
+          key: PrefsCustomFolder
+          type: string
+          value: "~/.config/iterm2"
+
+      - name: (iterm2) reload plist
+        become: true
+        shell: killall cfprefsd
+    tags:
+      - iterm2
+
   - name: karabiner
     block:
       - name: remove old karabiner settings
