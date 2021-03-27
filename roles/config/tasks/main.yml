@@ -1,0 +1,42 @@
+---
+
+- block:
+
+  - name: karabiner
+    block:
+      - name: remove old karabiner settings
+        file: path=~/.config/karabiner state=absent
+
+      - name: clone karabiner config repository
+        git:
+          repo: git@github.com:yuyamada/karabiner-conf.git
+          dest: ~/.config/karabiner
+          key_file: ~/.ssh/id_rsa
+          accept_hostkey: yes
+    tags:
+      - karabiner
+
+  - name: nvim
+    block:
+      - name: clone nvim config repository
+        git:
+          repo: git@github.com:yuyamada/nvim-conf.git
+          dest: ~/.config/nvim
+          key_file: ~/.ssh/id_rsa
+          accept_hostkey: yes
+    tags:
+      - nvim
+
+  - name: zsh
+    block:
+      - name: clone zsh config repository
+        git:
+          repo: git@github.com:yuyamada/zsh-conf.git
+          dest: ~/zsh-conf
+          key_file: ~/.ssh/id_rsa
+          accept_hostkey: yes
+
+      - name: run zsh config script
+        shell: bash install.sh chdir=~/zsh-conf
+    tags:
+      - zsh
