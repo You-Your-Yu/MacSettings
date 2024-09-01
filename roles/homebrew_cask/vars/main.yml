@@ -6,6 +6,5 @@ packages:
   - { name: google-japanese-ime, state: present }
   - { name: iterm2, state: present }
   - { name: karabiner-elements, state: present }
-  - { name: kindle, state: present }
   - { name: visual-studio-code, state: present }
-  - { name: jetbrains-toolbox, state: present }
+  - { name: spectacle, state: present }

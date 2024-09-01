@@ -10,4 +10,3 @@ packages:
   - { name: pyenv-virtualenv, state: present }
   - { name: tmux, state: present }
   - { name: wget, state: present }
-  - { name: rustup-init, state: present }
